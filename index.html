@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+        <link rel="manifest" href="./img/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="./style.css" />
+        <title> Square dash </title>
+    </head>
+    <body>
+        <div class="game">
+            <audio src="./audio/main-game-music.mp3" id="game-sound" style="display: none;"></audio>
+            <div class="game-over">
+                <h1> Game Over </h1>
+                <p> Score : <span id="final-score"></span> </p>
+                <button id="playButton" class="primary2"> Play Again </button>
+                <button id="quitButtonFromGameOver" class="primary2"> Quit </button>
+                <audio src="./audio/game-over-sound.mp3" style="display: none;" id="game-over-sound"></audio>
+            </div>
+            <div id="stage">
+                <div id="player"></div>
+                <div class="obstacle small" id="obstacle"></div>
+                <button id="pauseButton"> Pause </button>
+                <div class="socre"> Socre: <span id="score-board"></span> </div>
+            </div>
+            <div id="paused">
+                <h1> Paused </h1>
+                <button id="resumeButton" class="primary2"> Resume </button>
+                <button id="quitButtonFromResume" class="primary2"> Quit </button>
+            </div>
+            <div id="home"> 
+                <h1> Square dash </h1>
+                <button id="playGame" class="primary"> Play </button>
+                <button id="creditsButton" class="secondary"> Credits </button>
+            </div>
+            <div id="credits">
+                <h1> Credits </h1>
+                <p> created by: s0npaRi11 <br>
+                    designed by : s0npaRi11 <br>
+                    font design by : Ryoichi Tsunekawa (Bebas Neue) <br>
+                    music by : JNATHYN (Dioma) </p>
+                <button id="homeButtonFromCredits" class="secondary"> Home </button>
+            </div>
+        </div>    
+    </body>
+
+    <script src="./app.js"></script>
+</html>
